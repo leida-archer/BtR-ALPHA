@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Rhythm — EDM Events</title>
+  <meta name="description" content="Beyond the Rhythm — immersive EDM events that move your soul. Discover upcoming events, lineups, and tickets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Beyond the Rhythm home">
+        <img src="assets/logos/logo-on-dark.svg" alt="Beyond the Rhythm" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#events" class="nav__link">Events</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+      </ul>
+      <a href="#tickets" class="btn btn--gradient nav__cta">Get Tickets</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU OVERLAY ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#events" class="mobile-menu__link">Events</a></li>
+      <li><a href="#about" class="mobile-menu__link">About</a></li>
+      <li><a href="#gallery" class="mobile-menu__link">Gallery</a></li>
+      <li><a href="#tickets" class="btn btn--gradient mobile-menu__cta">Get Tickets</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__gradient-overlay"></div>
+      <div class="hero__particles" id="particles"></div>
+    </div>
+    <div class="hero__content">
+      <img src="assets/logos/8c-option-a-orange-waveform.svg" alt="Beyond the Rhythm" class="hero__logo">
+      <p class="hero__tagline">Where sound becomes feeling</p>
+      <div class="hero__actions">
+        <a href="#events" class="btn btn--gradient btn--lg">Explore Events</a>
+        <a href="#about" class="btn btn--outline btn--lg">Learn More</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ===== NEXT EVENT + COUNTDOWN ===== -->
+  <section class="countdown-section" id="tickets">
+    <div class="container">
+      <div class="countdown-section__inner">
+        <div class="countdown-section__info">
+          <h4 class="section-label">Next Event</h4>
+          <h2 class="countdown-section__title">BEYOND THE RHYTHM - San Diego</h2>
+          <p class="countdown-section__details">
+            <span class="countdown-section__detail">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5 1v2M11 1v2M2 6h12M3 3h10a1 1 0 011 1v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              May 1, 2026
+            </span>
+            <span class="countdown-section__detail">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 14s5.5-3.5 5.5-7.5a5.5 5.5 0 10-11 0C2.5 10.5 8 14 8 14z" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="6.5" r="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              San Diego, CA
+            </span>
+          </p>
+        </div>
+        <div class="countdown" id="countdown">
+          <div class="countdown__block">
+            <span class="countdown__number" id="countDays">000</span>
+            <span class="countdown__label">Days</span>
+          </div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__block">
+            <span class="countdown__number" id="countHours">00</span>
+            <span class="countdown__label">Hours</span>
+          </div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__block">
+            <span class="countdown__number" id="countMins">00</span>
+            <span class="countdown__label">Min</span>
+          </div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__block">
+            <span class="countdown__number" id="countSecs">00</span>
+            <span class="countdown__label">Sec</span>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-tiers ticket-tiers--two">
+        <div class="ticket-card">
+          <div class="ticket-card__badge">Early Bird</div>
+          <h3 class="ticket-card__tier">General Admission</h3>
+          <p class="ticket-card__price">$65</p>
+          <ul class="ticket-card__perks">
+            <li>Access to FIT Social venue</li>
+            <li>Full bar access</li>
+            <li>Multiple onsite vendors</li>
+          </ul>
+          <a href="#" class="btn btn--gradient btn--full">Buy Now</a>
+        </div>
+        <div class="ticket-card">
+          <div class="ticket-card__badge">Standard</div>
+          <h3 class="ticket-card__tier">General Admission</h3>
+          <p class="ticket-card__price">$80</p>
+          <ul class="ticket-card__perks">
+            <li>Access to FIT Social venue</li>
+            <li>Full bar access</li>
+            <li>Multiple onsite vendors</li>
+          </ul>
+          <a href="#" class="btn btn--disabled btn--full" aria-disabled="true">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== UPCOMING EVENTS ===== -->
+  <section class="events" id="events">
+    <div class="container">
+      <h4 class="section-label">Upcoming</h4>
+      <h2 class="section-title">Events</h2>
+      <div class="events__grid">
+
+        <article class="event-card">
+          <div class="event-card__image">
+            <img src="Venue Photos/FIT Social/FIT_Social_Sunset.jpg" alt="FIT Social venue" style="width:100%;height:100%;object-fit:cover;">
+            <span class="event-card__status event-card__status--soon">Coming Soon</span>
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__name">BEYOND THE RHYTHM<br>San Diego</h3>
+            <p class="event-card__date">May 1, 2026 &bull; San Diego, CA</p>
+            <a href="#" class="btn btn--outline btn--sm btn--full">Notify Me</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LINEUP ===== -->
+  <section class="lineup" id="lineup">
+    <div class="container">
+      <h4 class="section-label">TBD - FIT Social</h4>
+      <h2 class="section-title">Lineup</h2>
+      <div class="lineup__grid lineup__grid--two">
+        <div class="artist-card artist-card--headliner">
+          <div class="artist-card__photo">
+            <img src="Artist Profile Photos/Chmura.jpg" alt="Chmura" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">CHMURA</h3>
+            <p class="artist-card__genre">Experimental Bass</p>
+          </div>
+        </div>
+        <div class="artist-card artist-card--headliner">
+          <div class="artist-card__photo">
+            <img src="Artist Profile Photos/Saturna.jpg" alt="Saturna" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">SATURNA</h3>
+            <p class="artist-card__genre">Experimental Bass</p>
+          </div>
+        </div>
+      </div>
+      <p class="lineup__more">+ more to be announced</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / EXPERIENCE ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <h4 class="section-label">The Movement</h4>
+          <h2 class="section-title section-title--left">More Than Music</h2>
+          <p class="about__description">
+            Beyond the Rhythm is a collective experience that transcends the ordinary. We curate immersive sonic environments where world-class artists, cutting-edge production, and a community of passionate music lovers converge.
+          </p>
+          <p class="about__description">
+            Every event is crafted to push boundaries — from the sound design to the visual art installations, from the intimate club nights to the open-air festivals. This isn't just a show. It's a movement.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number">5K+</span>
+              <span class="about__stat-label">Attendees</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">28+</span>
+              <span class="about__stat-label">Artists Hosted</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">16+</span>
+              <span class="about__stat-label">Events Hosted</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__ripple-container">
+            <svg class="about__ripple" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="rippleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#D6246E"/>
+                  <stop offset="50%" stop-color="#E8652B"/>
+                  <stop offset="100%" stop-color="#F2A922"/>
+                </linearGradient>
+              </defs>
+              <circle cx="256" cy="256" r="26" fill="url(#rippleGrad)"/>
+              <circle cx="256" cy="256" r="72" fill="none" stroke="url(#rippleGrad)" stroke-width="6" opacity="0.8"/>
+              <circle cx="256" cy="256" r="120" fill="none" stroke="url(#rippleGrad)" stroke-width="5" opacity="0.6"/>
+              <circle cx="256" cy="256" r="170" fill="none" stroke="url(#rippleGrad)" stroke-width="4" opacity="0.4"/>
+              <circle cx="256" cy="256" r="220" fill="none" stroke="url(#rippleGrad)" stroke-width="3" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h4 class="section-label">Moments</h4>
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide">
+          <img src="Gallery/Seattle 2025/IMG_9560.jpg" alt="Seattle 2025" style="width:100%;height:100%;object-fit:cover;">
+          <div class="gallery__overlay">
+            <span>Seattle 2025</span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="Gallery/Seattle 2025/IMG_9562.jpg" alt="Seattle 2025" style="width:100%;height:100%;object-fit:cover;">
+          <div class="gallery__overlay">
+            <span>Seattle 2025</span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="Gallery/Seattle 2025/IMG_9559.jpg" alt="Seattle 2025" style="width:100%;height:100%;object-fit:cover;">
+          <div class="gallery__overlay">
+            <span>Seattle 2025</span>
+          </div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <img src="Gallery/Seattle 2025/IMG_9561.jpg" alt="Seattle 2025" style="width:100%;height:100%;object-fit:cover;">
+          <div class="gallery__overlay">
+            <span>Seattle 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__inner">
+        <div class="newsletter__text">
+          <h2 class="newsletter__title">Join the Movement</h2>
+          <p class="newsletter__subtitle">Be the first to know about lineups, ticket drops, and exclusive events.</p>
+        </div>
+        <form class="newsletter__form" id="newsletterForm">
+          <div class="newsletter__input-wrap">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit" class="btn btn--gradient newsletter__btn">Subscribe</button>
+          </div>
+          <p class="newsletter__disclaimer">No spam. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logos/logo-on-dark.svg" alt="Beyond the Rhythm" class="footer__logo">
+          <p class="footer__tagline">Where sound becomes feeling</p>
+        </div>
+        <div class="footer__links-group">
+          <h4 class="footer__heading">Explore</h4>
+          <ul class="footer__links">
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-group">
+          <h4 class="footer__heading">Info</h4>
+          <ul class="footer__links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-group">
+          <h4 class="footer__heading">Connect</h4>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.78a8.18 8.18 0 003.76.92V6.69z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Spotify">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="X / Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="SoundCloud">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c-.009-.06-.05-.1-.1-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.172 1.308c.013.06.045.094.104.094.057 0 .093-.035.104-.094l.194-1.308-.194-1.332c-.011-.06-.047-.094-.104-.094m1.8-.725c-.066 0-.108.042-.118.108l-.226 2.044.226 2.002c.01.066.052.108.118.108s.106-.042.12-.108l.263-2.002-.263-2.044c-.014-.066-.054-.108-.12-.108m.899-.213c-.073 0-.12.05-.131.12l-.206 2.257.206 2.168c.011.072.058.12.131.12.071 0 .119-.048.131-.12l.234-2.168-.234-2.257c-.012-.072-.06-.12-.131-.12m.91-.18c-.079 0-.131.053-.142.132l-.193 2.437.193 2.318c.011.08.063.131.142.131.076 0 .13-.051.14-.131l.219-2.318-.219-2.437c-.01-.079-.064-.131-.14-.131m.892-.087c-.082 0-.139.06-.148.143l-.179 2.524.179 2.424c.009.085.066.143.148.143.08 0 .138-.058.149-.143l.203-2.424-.203-2.524c-.011-.083-.069-.143-.149-.143m.897-.024c-.09 0-.148.065-.157.155l-.163 2.548.163 2.476c.009.09.067.154.157.154.088 0 .148-.064.158-.154l.187-2.476-.187-2.548c-.01-.09-.07-.155-.158-.155m.903-.002c-.095 0-.157.07-.165.164l-.152 2.55.152 2.518c.008.095.07.164.165.164.093 0 .156-.069.166-.164l.174-2.518-.174-2.55c-.01-.094-.073-.164-.166-.164m.899.038c-.1 0-.164.074-.171.173l-.14 2.512.14 2.563c.007.1.071.173.171.173.099 0 .164-.073.174-.173l.16-2.563-.16-2.512c-.01-.1-.075-.173-.174-.173m.908-.108c-.107 0-.172.08-.179.183l-.13 2.62.13 2.595c.007.104.072.183.179.183.104 0 .172-.079.181-.183l.148-2.595-.148-2.62c-.009-.104-.077-.183-.181-.183m.895-.168c-.112 0-.181.084-.187.193l-.118 2.788.118 2.636c.006.11.075.193.187.193.11 0 .18-.083.189-.193l.133-2.636-.133-2.788c-.009-.11-.079-.193-.189-.193m.901-.119c-.117 0-.189.09-.195.203l-.106 2.907.106 2.673c.006.115.078.203.195.203.115 0 .189-.088.197-.203l.121-2.673-.121-2.907c-.008-.113-.082-.203-.197-.203m.902-.098c-.124 0-.197.094-.203.213l-.095 3.005.095 2.7c.006.12.079.213.203.213.122 0 .197-.094.205-.213l.107-2.7-.107-3.005c-.008-.12-.083-.213-.205-.213m2.75 1.088c-.414 0-.813.064-1.188.18-.238-2.688-2.509-4.787-5.28-4.787-.607 0-1.197.103-1.742.283-.217.072-.275.144-.278.287v9.474c.003.148.117.272.263.288h8.225c1.585 0 2.87-1.29 2.87-2.882s-1.285-2.843-2.87-2.843"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Beyond the Rhythm. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
